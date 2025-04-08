@@ -1,0 +1,107 @@
+/*body {
+    margin: 0;
+    background: #000;
+    color: white;
+}
+
+.video-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+#commentSection {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    display: none;
+}
+
+#commentSection.visible {
+    display: block;
+}*/
+
+body {
+    margin: 0;
+    background: #000;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.video-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.feedback {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    opacity: 0;
+    z-index: 4;
+    transition: opacity 0.3s;
+}
+
+.feedback.show {
+    opacity: 1;
+}
+
+.comment {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 40%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    z-index: 5;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.comment.visible {
+    transform: translateY(0%);
+}
+
+/*.hidden {
+    display: none;
+}*/

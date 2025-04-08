@@ -1,0 +1,70 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Gesture Video Player</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="video-container" id="videoContainer">
+        
+
+
+        <video id="video" className='vid' width="350" height="200" controls /*autoPlay*/ /*muted* />
+        <source src='/KUNG FU PANDA 4 _ Official Trailer.mp4' />
+        </video>
+
+        <video id="video" className='vid' width="350" height="200" controls /*autoPlay*/ /*muted* />
+        <source src='/vecteezy_day-to-night-cartoon-animation-effect-cartoon-sky-view_13005622.mp4' />
+        </video>
+
+
+
+        <div id="overlay"></div>
+    </div>
+
+    <div id="commentSection" class="hidden">
+        <p>Comments go here...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Video Player</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="video-container" id="videoContainer">
+        <video id="video" className='vid' width="350" height="200" controls autoPlay /*muted* />
+        <source src='/KUNG FU PANDA 4 _ Official Trailer.mp4' />
+        </video>
+
+        <video id="video" className='vid' width="350" height="200" controls autoPlay /*muted* />
+        <source src='/vecteezy_day-to-night-cartoon-animation-effect-cartoon-sky-view_13005622.mp4' />
+        </video>
+        <div id="overlay"></div>
+
+        <!-- Gesture Feedback Overlays -->
+        <div id="feedback" class="feedback"></div>
+    </div>
+
+    <div id="commentSection" class="comment hidden">
+        <p>💬 Comments loaded here...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
